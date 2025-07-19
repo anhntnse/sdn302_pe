@@ -1,6 +1,5 @@
-"use client";
+'use client';
 import Link from "next/link";
-import {FiShoppingCart} from "react-icons/fi";
 
 export default function Navbar() {
   return (
@@ -12,7 +11,7 @@ export default function Navbar() {
             href="/"
             className="text-2xl font-bold tracking-tight text-gray-800 hover:text-gray-600 transition-colors duration-300"
           >
-            ClothCart
+            Contact Management
           </Link>
 
           {/* Navigation Links */}
@@ -23,22 +22,13 @@ export default function Navbar() {
             >
               Home
             </Link>
-            {/* Cart with quantity */}
+
             <Link
-              href="/"
-              className="relative flex items-center text-gray-700 hover:text-black transition-colors duration-300 font-medium px-3 py-2 rounded hover:bg-gray-200"
+              href="/contacts/new"
+              className="bg-green-500 text-white font-medium px-4 py-2 rounded hover:bg-green-600 transition"
             >
-              <FiShoppingCart className="mr-1" />
-              Cart
+              Add Contact
             </Link>
-            {/* Auth Buttons */}
-            <Link
-              href="/"
-              className="text-medium text-gray-700 hover:text-black transition-colors duration-300 font-medium px-3 py-2 rounded hover:bg-gray-200"
-            >
-              Login
-            </Link>
-            {" "}
           </div>
         </div>
       </div>
